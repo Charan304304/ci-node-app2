@@ -1,11 +1,6 @@
 pipeline {
 agent any
 stages {
- stage('Clone') {
- steps {
- git 'https://github.com/Charan304304/ci-node-app2.git'
- }
- }
  stage('Install Dependencies') {
  steps {
  bat 'npm install'
